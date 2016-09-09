@@ -1,0 +1,19 @@
+<h1>All Courses From Ajax</h1>
+<hr />
+
+<button id="load_courses">Load Courses</button>
+<button id="show_create">Create Course</button>
+
+<div id="new_course_content" class='no-display'>
+  <form action="/courses" method="POST" id="new_course">
+    <input id='course_title' type='text' placeholder="Course Title" name="course[title]" required />
+    <br />
+    <input id='course_code' type='text' placeholder="Course Code" name="course[code]" />
+    <br />
+    <textarea id='course_desc' placeholder="Course Description" name="course[description]"></textarea>
+    <br />
+    <input type='submit' />
+  </form>
+</div>
+
+<ul id="courses"></ul>
